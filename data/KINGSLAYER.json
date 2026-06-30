@@ -1,0 +1,18 @@
+{
+    "id": 84813026,
+    "name": "KINGSLAYER",
+    "author": "motheye",
+    "creators": ["motheye"],
+    "verifier": "Sky",
+    "verification": "https://www.youtube.com/watch?v=PVG_ZnIyjvg",
+    "percentToQualify": "100",
+    "password": "open copy",
+    "records": [
+        {
+            "user": "Sky",
+            "link": "https://www.youtube.com/watch?v=PVG_ZnIyjvg",
+            "percent": 100,
+            "hz": 180
+        }
+    ]
+}
