@@ -100,7 +100,7 @@ export default {
                     </template>
                     <h3>Enjoyment list</h3>
                     <p>
-                        if you want to submit your enjoyment to a spreadsheet you can go to <a href="https://shorturl.at/4qQyM" target="_blank">this link</a>
+                        if you want to submit your enjoyment to a spreadsheet you can go to this link <a href="https://shorturl.at/4qQyM" target="_blank"><strong>https://shorturl.at/4qQyM</strong></a>
                     </p>
                     <p>
                 </div>
