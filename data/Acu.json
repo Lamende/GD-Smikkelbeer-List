@@ -1,0 +1,18 @@
+{
+    "id": 61079355,
+    "name": "Acu",
+    "author": "neigefeu",
+    "creators": ["neigefeu"],
+    "verifier": "Sky",
+    "verification": "https://www.youtube.com/watch?v=ti9paHFZD-o",
+    "percentToQualify": "100",
+    "password": "open copy",
+    "records": [
+        {
+            "user": "LightningNL",
+            "link": "https://www.youtube.com/watch?v=EfsSX7goOcs",
+            "percent": 100,
+            "hz": 180
+        }
+    ]
+}
