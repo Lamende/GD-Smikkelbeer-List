@@ -4,28 +4,28 @@
 const scale = 3;
 
 /**
- * Calculate the score awarded when having a certain percentage on a list level
+ * Calculate the score awarded when having a certain percentage on a list level.
+ * The first entry in the list is worth 50 points and the last entry is worth 1.
  * @param {Number} rank Position on the list
  * @param {Number} percent Percentage of completion
  * @param {Number} minPercent Minimum percentage required
+ * @param {Number} totalLevels Total number of levels on the list
  * @returns {Number}
  */
-export function score(rank, percent, minPercent) {
-    if (rank > 150) {
-        return 0;
-    }
-    if (rank > 75 && percent < 100) {
+export function score(rank, percent, minPercent, totalLevels = 150) {
+    if (rank > totalLevels || totalLevels <= 1) {
         return 0;
     }
 
-    // Old formula
-    /*
-    let score = (100 / Math.sqrt((rank - 1) / 50 + 0.444444) - 50) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
-    */
-    // New formula
-    let score = (-24.9975*Math.pow(rank-1, 0.4) + 50) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
+    const maxScore = 50;
+    const minScore = 1;
+    const span = Math.max(totalLevels - 1, 1);
+    const baseScore =
+        minScore + ((totalLevels - rank) / span) * (maxScore - minScore);
+
+    const progressRatio =
+        (percent - (minPercent - 1)) / (100 - (minPercent - 1));
+    let score = baseScore * Math.max(progressRatio, 0);
 
     score = Math.max(0, score);
 
