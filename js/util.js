@@ -10,7 +10,8 @@ export function embed(video) {
 }
 
 export function localize(num) {
-    return num.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    const normalized = Number.isFinite(num) ? num : 0;
+    return normalized.toFixed(1).replace('.', ',');
 }
 
 export function getThumbnailFromId(id) {
