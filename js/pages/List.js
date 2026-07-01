@@ -1,5 +1,5 @@
 import { store } from "../main.js";
-import { embed } from "../util.js";
+import { embed, localize } from "../util.js";
 import { score } from "../score.js";
 import { fetchEditors, fetchList } from "../content.js";
 
@@ -44,7 +44,7 @@ export default {
                     <ul class="stats">
                         <li>
                             <div class="type-title-sm">Points when completed</div>
-                            <p>{{ score(selected + 1, 100, level.percentToQualify, list.length) }}</p>
+                            <p>{{ localize(score(selected + 1, 100, level.percentToQualify, list.length)) }}</p>
                         </li>
                         <li>
                             <div class="type-title-sm">ID</div>
@@ -159,6 +159,7 @@ export default {
     },
     methods: {
         embed,
+        localize,
         score,
     },
 };
