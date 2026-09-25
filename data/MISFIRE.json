@@ -8,5 +8,11 @@
     "percentToQualify": "100",
     "password": "open copy",
     "records": [
+        {
+            "user": "AstralNova",
+            "link": "https://www.youtube.com/watch?v=bGkm46fX5H0",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
