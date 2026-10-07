@@ -1,0 +1,24 @@
+{
+    "id": 32885972,
+    "name": "Denouement",
+    "author": "SynactiveGD",
+    "creators": ["SynactiveGD"],
+    "verifier": "AstralNova",
+    "verification": "https://www.youtube.com/watch?v=ed3YWLn7Fdw",
+    "percentToQualify": "100",
+    "password": "free copy",
+    "records": [        
+        {
+            "user": "Sky",
+            "link": "https://www.youtube.com/watch?v=-IhFi34WDdY",
+            "percent": 100,
+            "hz": 60
+        },
+         {
+            "user": "LightningNL",
+            "link": "https://www.youtube.com/watch?v=_InkSOPIdB4",
+            "percent": 100,
+            "hz": 60
+        }
+    ]
+}
