@@ -1,0 +1,18 @@
+{
+    "id": 68848817,
+    "name": "moment",
+    "author": "lexycat",
+    "creators": ["Icedcave", "lexycat", "Stormfly"],
+    "verifier": "Sky",
+    "verification": "https://www.youtube.com/watch?v=4dtVnTVvL2M",
+    "percentToQualify": 100,
+    "password": "Open Copy",
+    "records": [
+        {
+            "user": "AstralNova",
+            "link": "https://www.youtube.com/watch?v=crt7p9F_5gI",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
